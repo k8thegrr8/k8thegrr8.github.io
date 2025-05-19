@@ -3,7 +3,7 @@ Kate Kelly, kkelly@my.waketech.edu
 This is my school account.  
 This repository will hold assignments.  
 
-#About Me
+# About Me
 ## Hi there 👋
 - 🔭 I’m currently working on earning an Associate in Applied Science in Web/UX from Wake Technical Community College (anticipated May 2026).
 - 🎓 I graduated from Wake Tech with an Associate in Applied Science in Advertising and Graphic Design this spring.
