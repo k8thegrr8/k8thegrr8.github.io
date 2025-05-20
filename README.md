@@ -4,7 +4,7 @@ This is my school account.
 This repository will hold assignments.  
 
 # About Me
-## Hi there 👋
+## My Interests
 - 🔭 I’m currently working on earning an Associate in Applied Science in Web/UX from Wake Technical Community College (anticipated May 2026).
 - 🎓 I graduated from Wake Tech with an Associate in Applied Science in Advertising and Graphic Design this past spring.
 - 😄 Pronouns: she/her
@@ -13,3 +13,6 @@ This repository will hold assignments.
 
 ![A photo collage of two dogs, two cats, a bearded dragon, and a pixie frog.](https://katekelly.info/wp-content/uploads/2025/05/Kelly-Pets.png)
 
+## Websites I Recommend
+- [LinkedIn] (https://www.linkedin.com/) - I find LinkedIn helpful when searching for job postings and to keep up with collegues from past jobs.
+- [reddit] (https://www.reddit.com/) - I find a lot of helpful information here when I have questions.
