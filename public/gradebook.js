@@ -1,7 +1,3 @@
-window.onload = function () {
-    fetchGradeData();
-};
-
 function fetchGradeData() {
     //This function will query the PostgreSQL database and return grade data 
     console.log("Fetching grade data...");
