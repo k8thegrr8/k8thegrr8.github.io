@@ -1,3 +1,7 @@
+window.onload = function () {
+    fetchGradeData();
+};
+
 function fetchGradeData() {
     //This function will query the PostgreSQL database and return grade data 
     console.log("Fetching grade data...");
@@ -31,7 +35,7 @@ function populateGradebook(data) {
     let tableElm = document.getElementById("gradebook"); //Get the gradebook table element
         data.forEach(function(assignment){ // For each row of data we're passed in
             let row = document.createElement("tr"); // create a table row element
-            let columns = []; // Hand place to stick the columns of information
+            let columns = []; // Handy place to stick the columns of information
             columns.name = document.createElement('td'); // The first column's table data will be the name
             columns.name.appendChild(
                 // Concatenate the full name:  "last_name, first_name"
@@ -50,6 +54,3 @@ function populateGradebook(data) {
             tableElm.appendChild(row);
         });
 }
-window.onload = function () {
-    fetchGradeData();
-};
