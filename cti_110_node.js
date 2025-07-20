@@ -94,7 +94,7 @@ function populateGradebook(data) {
             columns.name = document.createElement('td'); // The first column's table data will be the name
             columns.name.appendChild(
                 // Concatenate the full name:  "last_name, first_name"
-                document.createTextNode(assignment.last_name + ", " = assignment.first_name)
+                document.createTextNode(assignment.last_name + ", " + assignment.first_name)
             );
             columns.grade = document.createElement('td'); // second column will be the grade
             columns.grade.appendChild(
@@ -105,5 +105,7 @@ function populateGradebook(data) {
             // Add the table data columns to the table row
             row.appendChild(columns.name);
             row.appendChild(columns.grade);
+            // Add the row to the table itself to make the data visible
+            tableElm.appendChild(row);
         });
 }
