@@ -16,7 +16,7 @@ function fetchGradeData() {
     xhr.onreadystatechange = function (){
         let results;
         // Check if we're done
-        if(xhr.readyState === xhr.DONE) {
+        if(xhr.readyState === 4) {
             // Check if we're successful
             if(xhr.status !== 200){
                 console.error(`Could not get grades. 
