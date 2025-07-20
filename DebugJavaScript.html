@@ -30,19 +30,26 @@
 
         function calculateMortgage() {
             // Get the initial amount from the principal box
-            const principle = parseFloat(document.getElementById("principle").value);
+            const principal = parseFloat(document.getElementById("principal").value);
 
             // update rate from the box
             const rate = parseFloat(document.getElementById("rate").value) / 100;
             // get the years to calculate
             const years = parseFloat(document.getElementById("years").value);
 
-            // Call the power funtion, pow, from Math
-            const monthlyRate = Math.pow(1 + rate, / 12, years * 12);
+            if (!principal || !rate || !years) {
+                document.getElementById("result").innerText = "Please fill in all fields with valid numbers.";
+            return;
+        }
+
+            // Call the power function, pow, from Math
+            const monthlyRate = rate / 12;
+            const numberOfPayments = years * 12;
+
 
             if (rate === 0) {
                 document.getElementById("result").innerText = "Interest rate cannot be zero.";
-                return;
+            return;
             }
 
             const monthlyPayment = (principal * monthlyRate * Math.pow(1 + monthlyRate, numberOfPayments)) /
