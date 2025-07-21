@@ -30,8 +30,11 @@ function fetchGradeData() {
 function populateGradebook(data) {
     // This function will take the fetched grade data and populate the table
     console.log("Populating gradebook with data:", data);
-    let tableElm = document.querySelector("gradebook"); //Get the gradebook table element
-        data.forEach(function(assignment){ // For each row of data we're passed in
+    let tableElm = document.querySelector("#gradebook"); //Get the gradebook table element
+    if (!tableElm) {
+        console.error("Could not find the gradebook table element.");
+        return;    
+    data.forEach(function(assignment){ // For each row of data we're passed in
             let row = document.createElement("tr"); // create a table row element
             let columns = []; // Handy place to stick the columns of information
             columns.name = document.createElement('td'); // The first column's table data will be the name
