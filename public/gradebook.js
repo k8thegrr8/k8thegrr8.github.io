@@ -33,7 +33,8 @@ function populateGradebook(data) {
     let tableElm = document.querySelector("#gradebook"); //Get the gradebook table element
     if (!tableElm) {
         console.error("Could not find the gradebook table element.");
-        return;    
+        return; 
+    }   
     data.forEach(function(assignment){ // For each row of data we're passed in
             let row = document.createElement("tr"); // create a table row element
             let columns = []; // Handy place to stick the columns of information
@@ -54,4 +55,4 @@ function populateGradebook(data) {
             // Add the row to the table itself to make the data visible
             tableElm.appendChild(row);
         });
-}
+    }
